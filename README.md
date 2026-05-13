@@ -1,179 +1,258 @@
-# CertiChain 🔗
+# 🚀 CertiChain  
+### 🔐 Blockchain-Powered Digital Credential Verification Platform
 
-**Blockchain-Powered Certificate Issuance & Verification Platform**
-
-CertiChain is a production-grade decentralized application (DApp) that enables institutions to issue tamper-proof digital certificates anchored on the blockchain. Certificate holders and third parties can independently verify authenticity without trusting a central authority.
-
-[![Solidity](https://img.shields.io/badge/Solidity-0.8.24-363636?logo=solidity)](https://soliditylang.org)
-[![React](https://img.shields.io/badge/React-18-61DAFB?logo=react)](https://react.dev)
-[![Node.js](https://img.shields.io/badge/Node.js-Express-339933?logo=node.js)](https://nodejs.org)
-[![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?logo=mongodb)](https://mongodb.com)
-[![IPFS](https://img.shields.io/badge/IPFS-Pinata-65C2CB?logo=ipfs)](https://pinata.cloud)
-
----
-
-## ✨ Features
-
-| Feature | Description |
-|---|---|
-| 🎓 **Certificate Issuance** | Issue individual or bulk (CSV) certificates with PDF generation |
-| ⛓️ **Blockchain Anchoring** | SHA-256 hash anchored on Ethereum/Polygon via smart contract |
-| 📦 **IPFS Storage** | PDF files pinned to IPFS via Pinata for decentralized storage |
-| 🔍 **Public Verification** | Verify by Certificate ID, file upload, or QR code scan |
-| 🚫 **Revocation** | On-chain revocation with audit trail |
-| 🌐 **Etherscan/Polygonscan Links** | Direct link to the blockchain transaction for every certificate |
-| 📊 **Admin Dashboard** | Animated analytics, certificate table, bulk operations |
-| 🔐 **Role-Based Auth** | JWT-secured admin panel with organization-level access control |
+<p align="center">
+  <img src="https://img.shields.io/badge/Blockchain-Secured-blue?style=for-the-badge&logo=ethereum" />
+  <img src="https://img.shields.io/badge/Web3-Enabled-purple?style=for-the-badge&logo=web3dotjs" />
+  <img src="https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react" />
+  <img src="https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge&logo=node.js" />
+  <img src="https://img.shields.io/badge/Solidity-SmartContracts-363636?style=for-the-badge&logo=solidity" />
+  <img src="https://img.shields.io/badge/Open%20Source-Project-success?style=for-the-badge" />
+</p>
 
 ---
 
-## 🏗️ Tech Stack
+<p align="center">
+  <img src="./screenshots/homepage.png" alt="CertiChain Banner" width="100%" />
+</p>
 
-```
-┌─ Frontend ──────────────────────────────────────┐
-│  React 18 + Vite + Framer Motion + Lucide Icons  │
-│  Recharts · react-router-dom · Axios             │
-└──────────────────────────────────────────────────┘
-┌─ Backend ───────────────────────────────────────┐
-│  Node.js · Express · MongoDB (Mongoose)          │
-│  JWT Auth · bcryptjs · Multer · pdf-lib          │
-└─────────────────────────────────────────────────┘
-┌─ Blockchain ────────────────────────────────────┐
-│  Solidity 0.8.24 · Hardhat · OpenZeppelin        │
-│  Ethers.js · Ethereum Sepolia / Polygon PoS      │
-└─────────────────────────────────────────────────┘
-┌─ Storage ───────────────────────────────────────┐
-│  IPFS via Pinata · MongoDB Atlas                  │
-└─────────────────────────────────────────────────┘
+---
+
+## 🌍 Overview
+
+CertiChain is a **next-generation blockchain-based certificate verification platform** designed to eliminate fake credentials and modernize digital certification systems.
+
+Using blockchain technology, CertiChain provides:
+
+✅ Immutable certificate storage  
+✅ Instant global verification  
+✅ Fraud prevention through cryptographic validation  
+✅ Transparent and decentralized credential management  
+
+The platform enables institutions, universities, organizations, and training providers to issue trusted digital certificates that can be verified anywhere in seconds.
+
+---
+
+# ✨ Features
+
+<table>
+<tr>
+<td width="50%">
+
+### 🔐 Security & Trust
+- Tamper-proof digital certificates
+- Blockchain-backed verification
+- Immutable credential records
+- Secure hash validation
+
+</td>
+
+<td width="50%">
+
+### ⚡ User Experience
+- Modern responsive UI
+- Instant certificate lookup
+- Dashboard for issuers
+- Fast verification workflow
+
+</td>
+</tr>
+</table>
+
+---
+
+# 🧠 Problem Statement
+
+Traditional certificate systems suffer from:
+
+❌ Certificate forgery  
+❌ Manual verification delays  
+❌ Lack of transparency  
+❌ Centralized record dependency  
+
+CertiChain solves these challenges using decentralized blockchain infrastructure.
+
+---
+
+# 🛠️ Tech Stack
+
+## 🎨 Frontend
+- React.js
+- Tailwind CSS
+- Framer Motion
+- React Router
+
+## ⚙️ Backend
+- Node.js
+- Express.js
+
+## ⛓️ Blockchain
+- Solidity Smart Contracts
+- Ethereum / Polygon
+- Hardhat
+
+## 🗄️ Database & Storage
+- MongoDB
+- IPFS / Pinata
+
+---
+
+# 🧩 System Architecture
+
+```text
+ ┌─────────────────┐
+ │   Institution   │
+ └────────┬────────┘
+          │
+          ▼
+ ┌─────────────────┐
+ │  CertiChain UI  │
+ └────────┬────────┘
+          │
+          ▼
+ ┌─────────────────┐
+ │ Backend Server  │
+ └────────┬────────┘
+          │
+          ▼
+ ┌─────────────────┐
+ │ Smart Contract  │
+ └────────┬────────┘
+          │
+          ▼
+ ┌─────────────────┐
+ │ Ethereum/IPFS   │
+ └─────────────────┘
 ```
 
 ---
 
-## 📁 Project Structure
+# 🎥 Demo Preview
 
-```
-CertiChain/
-├── blockchain/          # Hardhat project — smart contracts, tests, deployment
-│   ├── contracts/       # CertificateRegistry.sol
-│   ├── scripts/         # deploy.js, measure-gas.js
-│   └── test/            # Mocha/Chai unit tests
-├── server/              # Node.js + Express REST API
-│   ├── src/
-│   │   ├── config/      # Contract ABI, database connection
-│   │   ├── controllers/ # Auth, Certificate logic
-│   │   ├── middleware/  # JWT auth, file upload, validation
-│   │   ├── models/      # Mongoose schemas
-│   │   ├── routes/      # API route definitions
-│   │   └── services/    # Blockchain, IPFS, hashing, QR
-│   └── .env.example
-├── client/              # React + Vite frontend
-│   ├── src/
-│   │   ├── components/  # StatCard, CertificateTable, VerificationCard, etc.
-│   │   ├── contexts/    # AuthContext (JWT management)
-│   │   ├── pages/       # Dashboard, Verify, Login, Home
-│   │   └── services/    # Axios API client
-│   └── .env.example
-└── docs/                # Architecture and API documentation
-```
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHMybDFqMHB2Nmx5d3p3Ymx1b2d5bW53d3M1NGRwdmY4dTFyb2g5ZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/coxQHKASG60HrHtvkt/giphy.gif" width="80%" />
+</p>
 
 ---
 
-## 🚀 Local Setup
+# 📸 Screenshots
 
-### Prerequisites
-- Node.js 18+
-- MongoDB Atlas account (free tier works)
-- Pinata account (free tier — 1GB)
-- MetaMask wallet with Sepolia ETH (from a faucet)
+## 🏠 Homepage
 
-### 1. Clone & Install Dependencies
+<p align="center">
+  <img src="./screenshots/homepage.png" width="100%" />
+</p>
+
+---
+
+# ⚙️ Installation & Setup
+
+## 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/raimv05/Certi_Chain.git
-cd Certi_Chain
-
-cd blockchain && npm install
-cd ../server && npm install
-cd ../client && npm install
+git clone https://github.com/your-username/certichain.git
+cd certichain
 ```
 
-### 2. Configure Environment Variables
+---
+
+## 2️⃣ Install Dependencies
+
+### Frontend
 
 ```bash
-# Server
-cp server/.env.example server/.env
-# Fill in MongoDB URI, JWT_SECRET, ISSUER_PRIVATE_KEY, Pinata JWT, etc.
-
-# Blockchain
-cp blockchain/.env.example blockchain/.env
-# Fill in PRIVATE_KEY and SEPOLIA_RPC_URL
-
-# Client (optional for local)
-cp client/.env.example client/.env
+cd client
+npm install
 ```
 
-### 3. Deploy the Smart Contract
+### Backend
 
 ```bash
-cd blockchain
+cd server
+npm install
+```
+
+---
+
+## 3️⃣ Configure Environment Variables
+
+Create `.env` file inside backend folder:
+
+```env
+MONGO_URI=your_mongodb_uri
+PRIVATE_KEY=your_wallet_private_key
+RPC_URL=your_rpc_url
+CONTRACT_ADDRESS=your_contract_address
+```
+
+---
+
+## 4️⃣ Run Development Server
+
+### Backend
+
+```bash
+npm run dev
+```
+
+### Frontend
+
+```bash
+npm start
+```
+
+---
+
+# 🔗 Smart Contract Deployment
+
+```bash
+npx hardhat compile
 npx hardhat run scripts/deploy.js --network sepolia
-# Copy the deployed address into server/.env → CERTIFICATE_CONTRACT_ADDRESS
 ```
 
-### 4. Start All Services
+---
 
-```bash
-# Terminal 1 — Backend
-cd server && npm run dev
+# 🎯 Real-World Applications
 
-# Terminal 2 — Frontend
-cd client && npm run dev
-```
-
-### 5. Seed the Admin Account
-
-The first admin is seeded from the `SEED_ADMIN_*` values in `server/.env`. Restart the server once to trigger the seed.
-
-Login at: `http://localhost:5173/login`
+- 🎓 Universities
+- 🏢 Corporate Training
+- 📜 Online Certifications
+- 🧑‍💻 Bootcamps
+- 🌐 Government Credentials
 
 ---
 
-## ⛽ Gas Efficiency
+# 📈 Future Enhancements
 
-The smart contract is optimized to store only cryptographic references on-chain. Human-readable strings (name, course, issuer) are emitted in immutable event logs — not stored in state variables — reducing gas cost by ~28%.
-
-| Operation | Gas Used |
-|---|---|
-| Issue Certificate | ~172,208 gas |
-| Revoke Certificate | ~35,000 gas |
-
----
-
-## 🔐 Security Notes
-
-- **Never commit `.env` files** — they are listed in `.gitignore`
-- Generate a strong `JWT_SECRET` with: `openssl rand -hex 64`
-- For production, use a **Gnosis Safe** multi-sig as the contract admin
-- See `docs/` for the full security audit and production readiness guide
+- ✅ QR-based verification
+- ✅ NFT Certificates
+- ✅ AI Fraud Detection
+- ✅ Multi-chain support
+- ✅ Mobile application
+- ✅ DID (Decentralized Identity)
 
 ---
 
-## 🌐 Deploying to Production (Polygon PoS)
+# 👨‍💻 Author
 
-1. Add Polygon network to `blockchain/hardhat.config.js`
-2. Run `npx hardhat run scripts/deploy.js --network polygon`
-3. Update `CERTIFICATE_CONTRACT_ADDRESS` in `server/.env`
-4. Update Etherscan links in frontend to `polygonscan.com`
-5. Deploy backend on Railway/Render, frontend on Vercel
+## Manish Rai
 
-Estimated cost per certificate on Polygon: **< $0.01**
+💼 Full Stack & Blockchain Developer  
+🎓 Technical Trainer  
+🚀 Web3 Builder & Educator  
 
 ---
 
-## 📄 License
+# ⭐ Support The Project
 
-MIT — See [LICENSE](LICENSE) for details.
+If you found this project useful:
+
+🌟 Star the repository  
+🍴 Fork the project  
+📢 Share it with others  
 
 ---
 
-*Built with ❤️ by [Manish Rai](https://github.com/raimv05)*
+<p align="center">
+  <h3 align="center">⚡ Building Trust Through Blockchain ⚡</h3>
+</p>
