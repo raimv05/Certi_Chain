@@ -123,23 +123,7 @@ CertiChain solves these challenges using decentralized blockchain infrastructure
 
 ---
 
-# 🎥 Demo Preview
 
-<p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHMybDFqMHB2Nmx5d3p3Ymx1b2d5bW53d3M1NGRwdmY4dTFyb2g5ZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/coxQHKASG60HrHtvkt/giphy.gif" width="80%" />
-</p>
-
----
-
-# 📸 Screenshots
-
-## 🏠 Homepage
-
-<p align="center">
-  <img src="./screenshots/homepage.png" width="100%" />
-</p>
-
----
 
 # ⚙️ Installation & Setup
 
