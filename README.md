@@ -12,10 +12,6 @@
 
 ---
 
-<p align="center">
-  <img src="./screenshots/homepage.png" alt="CertiChain Banner" width="100%" />
-</p>
-
 ---
 
 ## 🌍 Overview
